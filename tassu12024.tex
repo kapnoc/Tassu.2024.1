@@ -8,7 +8,7 @@
 \usepackage{multicol}
 \usepackage{xcolor}
 \usepackage{enumitem}
-%\usepackage{ragged2e}
+\usepackage{ragged2e}
 \usepackage{graphicx}
 \usepackage{wallpaper}
 \usepackage{lipsum}
@@ -16,6 +16,7 @@
 \usepackage[labelformat=empty]{caption}
 \usepackage[export]{adjustbox}
 \usepackage{calc}
+\usepackage{pstricks}
 
 \definecolor{link}{HTML}{05A8F7}
 
@@ -23,13 +24,13 @@
 
 \RedeclareSectionCommands[tocraggedentrytext]{section}
 
-%\setlength{\RaggedRightParindent}{\parindent}
-%\RaggedRight
-\setmainfont[Ligatures=TeX]{Arimo}
+\setlength{\RaggedRightParindent}{\parindent}
+\RaggedRight
+\setmainfont[Ligatures=TeX]{Arial}
 \urlstyle{same}
 \definecolor{kuru}{HTML}{f7941e}
 \setcounter{secnumdepth}{0}
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \addto\captionsfinnish{\renewcommand{\contentsname}{Tässä numerossa:}}
 \addtokomafont{sectionentry}{\normalfont}
 \addtokomafont{disposition}{\rmfamily}
@@ -43,26 +44,26 @@
 \begin{document}
 \thispagestyle{empty}
 
-\ThisCenterWallPaper{1.10}{kansikuva}
+\ThisCenterWallPaper{1.10}{assets/kansikuva}
 
 \vspace*{5.70cm}
 
 {\noindent\color{kuru}\begin{tabular}{@{}c@{}}
-\includegraphics[width=6cm]{logo} \\
+\includegraphics[width=6cm]{assets/logo} \\
 \\
 {\large\bfseries 1/2024 Kurkisuon Rusakot ry}
 \end{tabular}\par}
 
 \clearpage
 
-\ThisULCornerWallPaper{1}{sisäkansikuva.jpg}
+\ThisULCornerWallPaper{1}{assets/sisäkansikuva.jpg}
 
 \noindent \textbf{Tassu 1/2024} \\
 \noindent ISSN 0783-1536
 
 \vfill
 
-\begin{multicols}{2}
+% \begin{multicols}{2}
 \noindent\textbf{Toimitus:}
 
 Tanguy Gérôme
@@ -83,321 +84,433 @@ Kurkisuon Rusakot ry, Helsinki
 
 \medskip
 
-\noindent Etu-, sisä- ja takakannen kuvat:
+\noindent Etu- ja sisäkannen kuvat:
 
 Tanguy Gérôme
 
-\columnbreak
+\noindent Takakannen kuva:
 
-\tableofcontents
-\end{multicols}
+Tuntematon kolkka
+
+% \columnbreak
+
+\clearpage\tableofcontents
+% \end{multicols}
 
 \clearpage\section{Lippukunnanjohtajan tervehdys}
 
 %\medskip
 
-%\begin{multicols}{2}
+\begin{multicols}{2}
 
 %\columnbreak
 
-\noindent äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääääääääääääääääääääääääääääääää ääääää
+\noindent äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääää äääääääääääää
 
 öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö öööööööö! \\
 
-\noindent LPKJ Janne
+\vspace*{0.50cm}
+
+\null\hfill LPKJ Janne Suomalainen
+
+\end{multicols}
+
 
 \medskip
-\noindent\includegraphics[width=\linewidth]{lpkjtervehdys}
+\noindent\includegraphics[width=\linewidth]{assets/lpkjtervehdys}
 
 \medskip
-\noindent Kuva Tanguy Gérôme
+\noindent\null\hfill Kuva: Tanguy Gérôme
 
-%\end{multicols}
+\clearpage\section{Lippukunnan syksy 2023 nopeasti}
+	\subsection{ROK}
+	\subsection{Operaatio olio -telttaretki 6.-8.10.}
+	\subsection{Hiipivä Haamu 5.11.}
+	\subsection{Samoajien retki ÄmÄm:n kanssa 10.-12.11.}
+	\subsection{Pikkujouluretki \& joulujuhla 15.-17.12.}
 
-%\clearpage\section{Lippukunnan kevät 2020: retkiä ja etäpartiota}
-%
-%Vuoden alussa kukaan tuskin arvasi miten poikkeuksellinen partiokeväästä 2020 tulisi. Tassun kuvareportaasin myötä pääsemme kaikki palaamaan alkukevään retkiin ja poikkeusolojen aikaiseen toimintaan.
-%
-%\vspace*{-.25cm}
-%
-%\subsection{Tarpojaosaston retki 28.2.–1.3. @ Mörrimöykky} 
-%
-%\begin{figure}[!h]
-%\centering
-%\begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{IMG-20200229-WA0004}
-%\caption{Yhden rusakon syntymäpäivää vietettiin Mörrimöykyn hämärässä tuvassa retkiperjantaina. Retkellä oli tuttujen oranssihuivien lisäksi mukana sinihuivisia Kontutyttöjä, joiden toimesta valmistui myös kakkutarjoilu.}
-%\end{minipage} \hfill \begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{2256153000103720180}
-%\caption{Tarpojat pääsivät kokeilemaan perinteisiä partiotaitojaan kisan muodossa. Kuvassa \textit{Vitoset}"-vartio näyttää mallia sytykkeiden teossa.}
-%\end{minipage}
-%
-%\vspace*{\columnsep}
-%
-%\includegraphics[width=\linewidth,clip,trim={0 .5cm 0 .5cm}]{DSC_0062}
-%\caption{Voittajaksi selviytyivät \textit{Mörököllit}, jotka tässä kokeilemassa loukkaantuneen siirtämistä ensiapurastilla. Myös nyrjähtäneen nilkan ja silmävamman ensiapua pohdittiin.}
-%\end{figure}
-%
-%\clearpage\subsection{Kolkkaosaston retki 6.–8.3. @ Östersundom}
-%
-%\begin{figure}[!h]
-%\centering
-%\begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{2259034453305001497}
-%\caption{Kolkat ja Kontutyttöjen sudenpennut matkasivat Östersundomin leirikeskukseen julkisilla kulkuvälineillä.}
-%\end{minipage} \hfill \begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{IMG_20200306_183406}
-%\caption{Pihamaalle pystytettiin talviteltta, jossa kaikki kolkat pääsivät viettämään toisen yön.}
-%\end{minipage}
-%
-%\vspace*{\columnsep}
-%
-%\begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{DSC_0067}
-%\end{minipage} \hfill \begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{IMG_20200307_134907}
-%\end{minipage}
-%
-%\vspace*{\columnsep}
-%
-%\includegraphics[width=\linewidth,clip,trim={0 .3cm 0 .8cm}]{2259493996753497985}
-%\caption{Lauantaina ohjelmassa oli niin aamujumppa, huispausta kuin telttasaunan rakentamista. Myöhemmin päästiin nauttimaan myös mainioista löylyistä!}
-%\end{figure}
-%
-%\clearpage
-%
-%\ThisULCornerWallPaper{1}{2259730771254105316}
-%
-%~\vspace*{7.7cm}
-%
-%\begin{figure}[!h]
-%\centering
-%\caption{Illalla kokoonnuttiin nuotiolle kertomaan vitsejä, laulamaan lauluja ja paistamaan lettuja.}
-%
-%\vspace*{\columnsep}
-%
-%\includegraphics[width=\linewidth,clip,trim={0 .3cm 0 0}]{2260220549787494712}
-%\caption{Sunnuntaina kolkat valmistivat vielä itse lounaaksi herkullista broileririsottoa. Ruoka valmistui mallikkaasti ja suurimmat haasteet kohdattiin trangian tiskaamisessa: risottoriisi kun tarttuu pohjaan palaessaan ikävästi kiinni kattilan pohjaan\ldots}
-%\end{figure}
-%
-%\clearpage\subsection{Kolkkien etäpartiokokoukset}
-%
-%Lippukunnan molemmat kolkkaparvet kunnostautuivat poikkeusoloista huolimatta aktiivisuudellaan kevään aikana. Videoyhteyden avulla ja pienellä omatoimisuudella nuorimmat rusakot ehtivät puuhailla mm. Muumit ja Itämeri "=aiheisen \#Meidänmeri"-merkin sekä luovaa ajattelua ja ongelmanratkaisua testaavien tehtävien parissa.
-%
-%\vfill
-%
-%\begin{figure}[!h]
-%\centering
-%\begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{2282166614937710220}
-%\end{minipage} \hfill \begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{2312603851655313744}
-%\end{minipage}
-%
-%\vspace*{\columnsep}
-%
-%\begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{2312603851630204015}
-%\end{minipage} \hfill \begin{minipage}[t]{.5\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{2312603851655317178}
-%\end{minipage}
-%\end{figure}
-%
-%\vfill
-%
-%\noindent Kuvareportaasien kuvat Nonna Kervinen, Mikko Niinimäki, Janne Suomalainen ja Annina Toivakka
-%
-%\clearpage\section{Kisailua etäyhteydellä – EtäPupu2020}
-%
-%\begin{figure}[!h]
-%\centering
-%\includegraphics[width=\linewidth]{2311148361922581157}
-%\caption{Kisan aikana sai käyttää luovuuttaan, mm. partioaiheisella luontotaiteella.}
-%\end{figure}
-%
-%\begin{figure}[t]
-%\centering
-%\begin{minipage}[t]{.333\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{97132957_165548654932063_1649771865181908506_n}
-%\end{minipage} \hfill \begin{minipage}[t]{.333\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{annina.jpg}
-%\end{minipage} \hfill \begin{minipage}[t]{.333\linewidth-.5\columnsep}
-%\includegraphics[width=\linewidth]{lilja.jpg}
-%\end{minipage}
-%\caption{Kisaajat tapasivat toisiaan vain videoyhteyden välityksellä, myös tehtävien palautus tapahtui kuvien ja videoiden muodossa.}
-%\end{figure}
-%
-%\begin{multicols}{2}
-%\noindent\includegraphics[width=\linewidth,clip,trim={0 .5cm 0 0}]{2311148361947784797}\captionof{figure}[]{Näinkin herkullinen banaanipannukakku valmistui yhdeltä kisaajalta!}
-%
-%\columnbreak
-%
-%\noindent Teksti Väinö Syrjälä \\ Kuvat EtäPupun kilpailijat
-%
-%\medskip
-%
-%KuRu:n perinteinen, leikkimielinen partiokisa Pupu herätettiin henkiin näin poikkeuskeväänä, tosin vähän erilaisessa muodossa. Vaikka kilpailijoita olikin lopulta mukana vain kolme, saatiin aikaan mukava viikonloppu haastavien tehtävien parissa ja voittajakin löydettiin!
-%
-%\hspace*{\parindent} Kisan aluksi kokoonnuttiin videoyhteydellä: lähtötehtävänä taiteltiin rusakko"-origamit. Lisäksi päästiin pienelle vierailulle Tukholmaan videon mudossa. Myös lauantai"-illan yhteisen visailun merkeissä ja kisan maalissa sunnuntaina tavattiin etänä. Muutoin rastivihjeitä ja "=tehtäviä ratkottiin omatoimisesti. Nykytekniikka osoitti tässä hyödyllisyytensä, kun kisan etenemistä päästiin “kisakeskuksessa” seuraamaan kisaajien lähettämien kuvien muodossa!
-%
-%\hspace*{\parindent} Vaikka rastit suoritettinkin kotosalla, pisteitä kerättiin hyvin samantyyppisistä tehtävistä kuin aikaisemmissa Pupu"-kisoissa. Osallistujat pääsivät ratkomaan salakieliä, loihtimaan jälkiruokaherkkuja keittiössä, rakentamaan majaa, vierailemaan virtuaalisessa Suomenlinnassa ja auttamaan äitiä kotitöissä. Välillä myös ulkoiltiin, niin luontotaidetta loihtimassa kuin haastavaa aukkotekstiä sekä kuvasuunnistusta lähimaastossa ratkoen. Tarjoutuipa illalla vielä mahdollisuus bonuspisteisiin auringonlasku valokuvaamalla.
-%
-%\columnbreak
-%
-%\noindent\includegraphics[width=\linewidth]{fb635169-3500-444a-b576-57450430f47b}
-%
-%\medskip
-%
-%\noindent\includegraphics[width=\linewidth]{51832ba5-58a0-4072-8c16-e8fe962197a3}\captionof{figure}[]{Äidin pikku apulaiselle oli luvassa hyvät pisteet siististä suorituksesta.}
-%\end{multicols}
-%
-%\begin{multicols}{2}
-%Lopulta saatiin laskea tarkasti kaikkien tehtävien pisteet; voittajaksi tasaisessa kisassa selvisi Nonna! Kaikille kisaajille on vielä luvassa palkinnot osallistumisesta sopivassa yhteydessä.
-%
-%\columnbreak
-%
-%\noindent\includegraphics[width=\linewidth]{cbf913db-8cab-4518-91d0-6f3674b9fd71}\captionof{figure}[]{Aurinko laskee ensimmäisen kisapäivän iltana, kameraa käyttämällä siitäkin irtosi bonuspisteitä tiukkaan taistoon.}
-%\end{multicols}
-%
-%\vfill
-%
-%\begin{tcolorbox}
-%\noindent Kuinka monta kisan rastitehtävän salakielistä sinä olisit ratkaissut? Nyt pääset sinäkin haastamaan päättelykykyäsi – ratkaisut julkaistaan lippukunnan somessa heinäkuun alussa! \begin{enumerate}
-%\item nelletsirääv atuus ivus ivelut neukkiek akoj ättävek aattiokrat okuot nuukokuot
-%\item hii ni ya kufurahisha sana
-%\item becnxäå dnxnxlölylccl äå årywl fnbfncdn
-%\item \textcolor{red}{♦A♥6} / \textcolor{red}{♥8}♣Q\textcolor{red}{♥A♥4} / ♠J♣7 / \textcolor{red}{♥8}♠6 / \textcolor{red}{♥3♥J♥Q}♠K / \textcolor{red}{♦3} / \textcolor{red}{♦10♥5} / \textcolor{red}{♥J♦J♦10}♣3 / \textcolor{red}{♦Q♥2}
-%\item 112 + 111 + 109 + 112 + 112 + 105 + 118 + 097 + 116 + 112 + 117 + 112 + 117 + 116
-%
-%= 107 + 110 + 117 + 098 + 098 + 105 + 103 + 107 + 097 + 110 + 105 + 110
-%
-%= 099 + 104 + 117 + 098 + 098 + 121 + 098 + 117 + 110 + 110 + 121
-%\end{enumerate}
-%\end{tcolorbox}
-%
-%\vfill
-%
-%\noindent Herättikö raportti innostusta kisailuun? \textbf{EtäPupu2.0} tulee vielä kesällä! Ks. lisää sivulta \pageref{tulossa} ja seuraa tiedotusta sähköpostilla.
-%
-%\clearpage\section{Partiopuuhailua kesälomalle}
-%
-%Vaikka kesäleirille ei tänä vuonna päästäkkään, voi kesällä puuhailla partiohenkisesti vaikka oman perheen kanssa. Tässä Tassun parhaita vinkkejä!
-%
-%\begin{multicols}{2}[\subsection{Vinkkejä partiopuuhailuun kotosalla, pihalla tai lähimaastossa}]
-%\includegraphics[width=\linewidth]{_7251867}
-%
-%\columnbreak
-%
-%\begin{itemize}
-%\item Tee päivän hyvä työ ja kerää roskia lähimetsästä.
-%\item Tarkkaile luontoa: bongaa lintuja tai hyönteisiä, seuraa kasvien kasvua kesän mittaan.
-%\item Istuta kasvi, kukkia tai yrttejä omalle pihalle tai vaikkapa keittiön ikkunalaudalle.
-%\item Opettele tai kertaa partiotaitoja: solmuja, karttamerkkejä tai vaikka morseaakkoset – netistä löydät runsaasti hyviä ohjeita.
-%\item Tee eväsretki oman perheen kanssa – kauas ei tarvitse lähteä, vaikka vain parvekkeelle tai lähipuistoon. Mikäli haluat haastetta ja sinulta löytyy tarvikkeet, valmista vaikka ruokaa retkikeittimellä.
-%\item Nuku yö ulkona, pystytä teltta omalle pihalla tai rakenna maja parvekkeella.
-%\end{itemize}
-%
-%\noindent\includegraphics[width=\linewidth]{IMG-20200608-WA0001}
-%\end{multicols}
-%
-%\clearpage\subsection{Lähde retkelle lähimaastoon}
-%
-%\begin{figure}[!h]
-%\centering
-%\includegraphics[width=\linewidth]{IMG-20200608-WA0015}
-%\end{figure}
-%
-%\begin{multicols}{2}
-%\noindent Ota perhe mukaan retkelle ja opeta heillekin hyödyllisiä partiotaitoja, luonnossa liikkumisesta ruoan valmistukseen. Aikaisemmissa Tassuissa on esitelty sarja retkikohteita ja "=ideoita. \href{https://kurkisuonrusakot.wordpress.com/tassu/}{Netistä} löydät nämä: \textit{Valkmusan kansallispuisto} (Tassu 2/2015), \textit{Helsingin keskuspuisto} (1/2016), \textit{Vallisaari} (1/2017) ja \textit{valokuvausretki} (1/2015). Lisää vinkkejä löytyy vanhemmista painetuista numeroista, jos olet laittanut niitä talteen.
-%
-%Myös aivan lähimaastosta löytyy monta mielenkiintoista kohdetta lyhempää päiväretkeä varten: joko nämä ovat sinulle tuttuja? \begin{itemize}
-%\item Mustavuori, Vuosaaren huippu ja Vuosaaren sataman näköalatasanne
-%\item Uutelan ulkoilualue
-%\item Viikki ja Vanhankaupunginlahti
-%\item Kivikon ja Jakomäen metsät ja kalliot
-%\item Kierros Malmin lentokentän ympäri
-%\item Sipoonkorven kansallispuisto (ja polut sinne Östersundomin suunnalta)
-%\item Talosaari
-%\end{itemize}
-%\end{multicols}
-%
-%\vfill
-%
-%\noindent Lisää hyviä vinkkejä löydät näiltä nettisivuilta: \begin{itemize}
-%\item \href{https://www.hel.fi/helsinki/fi/kulttuuri-ja-vapaa-aika/ulkoilu/mantereella-helsingissa-espoossa-ja-vihdissa/}{www.hel.fi/helsinki/fi/kulttuuri-ja-vapaa-aika/ulkoilu/mantereella-helsingissa-espoossa-ja-vihdissa}
-%\item \href{https://uuvi.fi/fi/kohteet/}{uuvi.fi/fi/kohteet}
-%\item \href{https://www.luontoon.fi/}{www.luontoon.fi}
-%\end{itemize}
-%
-%\clearpage\section{Muistoja vuodelta 2019}
-%
-%Kuvat Mikko Niinimäki, Janne Suomalainen ja Väinö Syrjälä
-%
-%\medskip
-%
-%\noindent Edellisestä Tassusta on vierähtänyt jo tovi jos toinenkin – ja koska keväällä ei sattuneesta syystä ole päästy kokoontumaan yhtä moneen tapahtumaan kuin tavallisesti – joten syksyn retkiä, kisoja, kokouksia ym. odottaessa voidaan nostaa tunnelmaa vuoden 2019 partiomuistoilla.
-%
-%\begin{figure}[!h]
-%\centering
-%\includegraphics[width=\linewidth,clip,trim={0 0 0 .35cm}]{_5251648}
-%\caption{\textit{Kansallispuistokierros 2.0}: jatkona muutaman vuoden takaiselle autovaellukselle joukko lippukunnan johtajia kiersi reilu vuosi sitten Itä"-Suomen kansallispuistoja. Kuudessa päivässä ehdittiin tutustua 12 kansallispuistoon – ja 2600 kilometriin maanteitä sekä 55 kilometriin vaelluspolkuja\ldots}
-%\end{figure}
-%
-%\begin{figure}[!h]
-%\centering
-%\includegraphics[width=\linewidth,clip,trim={0 0 0 .35cm}]{_7231834}
-%\caption{\textit{Kesäleiri Epizon 2019}: viime kesänä reissattiin aurinkoisiin Bentsårin saaristomaisemiin yhdessä Rastipartion kanssa -- ja yhteistyötä tehtiin myös viereisen leirialueen HeKojen ja Kontyjen kanssa. Leiripäiviin mahtui monenmoista puuhaa: perinteisestä risulautan rakentamisesta ja koeuitosta leiridiskoon. Tältä kesältä leiri peruuntui, mutta huhuja on jo kuultu kesän 2021 Itä"-Helsingin yhteisestä leiristä!}
-%\end{figure}
-%
-%\clearpage
-%
-%\begin{figure}[p]
-%\centering
-%\includegraphics[width=\linewidth]{IMG-20200608-WA0026}
-%\caption{\textit{Hiipivä Haamu}: perinteinen salapoliisikisa kerää aina marraskuun ensimmäisenä sunnuntaina toista sataa vartioita kisaamaan ympäri Helsinkiä. Mahtipäärynät sijoittui KuRu:n kolmesta vartiosta parhaiten: hienosti sijalle 9 (95 A"-sarjan vartion joukossa)! Rastikierrosten lomassa ehdittiin pysähtyä poseeraamaan kisa"-asuissa. Marraskuussa taas rusakoitakin varmasti kisaamassa.}
-%\end{figure}
-%
-%\begin{figure}[p]
-%\centering
-%\includegraphics[width=\linewidth]{PB230798}
-%\caption{\textit{Pikkujouluretki Meriharjussa}: partiovuoden huipennus on koko lippukunnan yhteinen pikkujouluretki – kaikista perinteisimmässä muodossaan Meriharjussa. Mikä loihtisikaan joulutunnelmaa paremmin kuin piparkakkutalojen koristelu? Myös tulevana syksynä kokoonnutaan Meriharjuun!}
-%\end{figure}
-%
-%\clearpage\section{Tulossa: Kesä 2020}
-%
-%\subsection{Kesäseikkailu -- seikkailijat ja tarpojat}
-%
-%Heinäkuun Kesäseikkailu on päivänmittainen juonellinen maastoleikki, jossa seikkailijat ja tarpojat pääsevät testaamaan ja kertaamaan oppimiaan asioita. Tapahtuma järjestetään pääkaupunkiseudun alueella, tarkka ajankohta ilmoitetaan myöhemmin. \textit{Lisätietoja saat sähköpostitse viimeistään heinäkuun alussa}!
-%
-%\subsection{Etä-Pupu2.0 -- kaikenikäiset rusakot}\label{tulossa}
-%
-%Heinäkuussa pääset haastamaan itseäsi leikkimielisen partiotaitokisan tehtävillä. Jokaisen viikon aluksi julkaistaan uusia visaisia tehtäviä, joita voit ratkoa vaikka yhdessä perheesi kanssa. \textit{Tarkemmat osallistumisohjeet saat sähköpostitse heti juhannuksen jälkeen}!
-%
-%\subsection{Ryhmänohjaajakoulutus -- samoajat}
-%
-%Kurssin alkutapaaminen ja metsäviikonloppu kesäkuussa, toinen koulutusviikonloppu elokuussa. Tarkempi aikataulu on lähetetty ilmoittautuneille.
-%
-%\subsection{Muita tapahtumia}
-%
-%Kaikki ryhmät pyrkivät tekemään päiväretkiä kesän aikana -- oma johtajasi tiedottaa tarkemmin, seuraa sähköpostia ja lippukunnan somea.
-%
-%\section{Tulossa: Syksy 2020}
-%
-%Syksyn toiminta päästään toivottavasti käynnistämään tavalliseen tapaan. Seuraamme tilanteen kehittymistä ja tarkempaa tietoa lähetetään kaikille jäsenille elokuussa.
-%
-%\medskip
-%
-%\noindent Kokoukset alkavat viikolla 36. Suunniteltuja tapahtumia: \textit{kolkkien päiväretki, seikkailijoiden ja tarpojien kämppäretki, koko lippukunnan pikkujouluretki Meriharjuun, joulujuhla \ldots\ ja paljon muuta}!
-%
-%\medskip
-%
-%\noindent Muista pitää yhteystietosi (erityisesti sähköpostiosoite) Kuksassa ajan tasalla, niin kaikki ajankohtaiset tiedotteet löytävät perille.
+\clearpage\section{Lippukunnan kevät 2024}
+	\subsection{Viikkokokoukset}
+	\subsection{Lippukunnan yhteinen laskiaistiistai 13.2.}
+
+\begin{multicols}{2}
+
+	\vspace*{0.16cm}
+	\noindent\includegraphics[width=\linewidth]{assets/laskiaistiistai1}
+
+	\vspace*{0.16cm}
+	\noindent\includegraphics[width=\linewidth]{assets/laskiaistiistai2}
+
+	\columnbreak
+
+	\vspace*{0.16cm}
+	\noindent\includegraphics[width=\linewidth]{assets/laskiaistiistai3}
+
+\end{multicols}
+
+\medskip
+\noindent\null\hfill Kuvat: Tanguy Gérôme
+
+\clearpage
+\subsection{Vihreä nahkalilja 23.3.}
+
+\begin{multicols}{2}
+
+	Seitsemän rohkeaa rusakkoa, \mbox{Ahti}, Elias, Janne, Leo, Mikko,
+	\mbox{Tanguy} ja Toivo, lähtivät uhmaamaan fyysistä ja henkistä kestävyyttään
+	melkein keväisenä maaliskuun aamuna tavoitteenaan taittaa
+	neljänkymmenen kilometrin matka vuorokaudessa – niin sanottu vihreä
+	nahkalilja. Nahkaliljat ovat vyössä kannettavia partiomerkkejä, joiden
+	tarkoituksena on tähdentää ulkoilun merkitystä ja innostaa partiolaisia
+	ylläpitämään ja kehittämään peruskuntoaan. Rusakoissa tähdennys ja
+	innostus on jäänyt viime vuosina vähemmälle, sillä edellisistä
+	nahkaliljoista on ehtinyt vierähtää jo tovi: viimeksi nahkaliljoja on
+	vaellettu 26.–27.10.2018, 8.–9.5.2015, 3.–4.5.2014 ja 4.–5.5.2013. Nyt
+	kuitenkin innokas porukka on saatu kasaan ja reittimestari Ahti on
+	suunnitellut käveltävän reitin Helsingin Mikaelinkirkolta ja takaisin
+	paikoin Helsingin itäistä rantareittiä mukaillen – vähän niin kuin
+	vuonna 2013, kun allekirjoittanut vaelsi Espoon Rantaraittia
+	Kauklahdesta Helsingin keskustaan!
+
+	Vaelluksen lähtö ja maali olivat Mikaelinkirkolla, jonne rusakot
+	kokoontuivat aamuyhdeksäksi. Matkaan päästiin vasta \textbf{kello
+	9.05}, koska seurue jäi odottamaan kahta nahkaliljaan ilmoittautunutta,
+	jotka eivät kuitenkaan ilmestyneet lähtöön. Lähtöaika tarkistettiin
+	reittimestarin kellosta ja merkittiin tarkasti muistiin. Niin ikään osa
+	osallistujista käynnisti omat satelliitteihin tai muihin antureihin
+	tukeutuvat matkamittarinsa, kun taas itse vaellusreitti oli
+	perinteikkäästi piirretty karttatulosteelle.
+
+	Liikkeelle lähdettiin kohti Emännänpuistoa ja alustavaksi
+	taukostrategiaksi sovittiin, että viiden minuutin taukoja pidettäisiin
+	aina viiden kilometrin välein. Harkittiinpa myös ajanvietteeksi laskea
+	matkan aikana ylitettävät sillat, joista ensimmäiset tulivat vastaan
+	varsin pian, kun ylitettiin Kontulantie ja metron raiteet.
+
+	\vspace*{0.32cm}
+	\noindent\includegraphics[width=\linewidth]{assets/nahkaliljavantaa}
+
+	Pian oltiinkin jo Vantaan puolella, kun reittimestari ohjasi vaeltajia
+	ansiokkaasti Vesalan läpi yli Keihäsrinteen liukkaiden mäkien. Vantaan
+	kaupunginosista reitin aikana koettiin kaksi: Rajakylä ja Länsimäki,
+	joista – jos ei muuta – saatiin kerättyä muutama silta lisää, ja joista
+	ensimmäisessä sijaitsi reitin pohjoisin piste.
+
+	Reitti kaartui jyrkästi etelään ja ensimmäinen poikkeama suunnitellulta
+	reitiltä tehtiin tietoisesti \textbf{kello 9.40}, kun vaihdettiin
+	puolta Länsimäentiellä pitkin Juoksuhaudanpuiston ylikulkukäytävää
+	viheralueelle, jonka läpi menevä ulkoilutie oli varsin kostea.
+	Kuntopolku aiheutti hilpeyttä osassa osallistujista, koska tie ei ollut
+	kovinkaan pitkä. Vaelluksen ensimmäinen suunnittelematon poikkeama
+	tehtiin \textbf{kello 9.52}, kun Keilapolun alikulkukäytävä ylitettiin
+	kahteen kertaan.
+
+	Pian oltiinkin takaisin Helsingin puolella. Likimain Mellunmäentien ja
+	Naulakalliontien risteyksessä Tanguy huudahti ensimmäisen viiden
+	kilometrin merkin, minkä jälkeen alettiin etsiä soveltuvaa
+	taukopaikkaa. Sellainen löydettiin Naulakallionpuistosta, jossa
+	pysähdyttiin evästämään ja ottamaan ryhmäkuva. Tauko päättyi
+	\textbf{kello 10.14}.
+
+	\vspace*{0.32cm}
+	\noindent\includegraphics[width=\linewidth]{assets/nahkaliljaryhmä}
+
+	Reitti jatkui kaakkoon, seisahdus Itäväylällä ja jo
+	Linnavuorenpuistossa \textbf{kello 10.38} alettiin arpoa, kuinka monen
+	sillan yli sitä oli mentykään. Kävelyalusta oli talven aikana
+	ladutettu, eli tiiviiksi tampattua nyt jo märkää ja jäätynyttä lunta.
+	Onneksi tie Vartiokylänlahden toisella puolella oli paljon
+	käveltävämmässä kunnossa. Taktisesti seuraava tauko pidettiin jo
+	Vuosaaren sillan kupeessa odottaen seuraavaa etappia läpi Puotilan,
+	Marjaniemen ja Roihuvuoren. Eväät maistuivat hyvin eikä kenenkään askel
+	painanut tavanomaista enempää. Tauolla pohdittiin läheisen rakennuksen
+	seinässä ollutta "vSv"-lyhennettä. (Toim. huom. oikea vastaus olisi
+	ollut Vuosillan Veneilijät.)
+
+	Vuosaaren sillalla ihmeteltiin uhkarohkeaa pilkkiosastoa, joka
+	keväisestä maaliskuun lauantaista huolimatta eteni Vartiokylänlahdella
+	\textbf{kello 11.16}. Mikko kuvasi toimintaa nasevasti yhdellä sanalla:
+	"Luonnonvalinta." Jo useamman kerran reitti ohitti kaupungin hienot
+	opaskyltit itäisestä rantareitistä, joka – nyt jälkikäteen ajatellen –
+	voisi olla ihan hauska retki sekin.
+
+	Marjaniemessä ihmetystä aiheutti Vanhalla Koivuniementiellä olleen
+	asuinrakennuksen voimakkaasti heijastavat seinäpaneelit, joista
+	varmasti naapurit olivat mielissään. Leikkipuisto Iso-Antin nimen
+	alkuperää yritettiin tavata Tapio Rautavaaran sanoin "Isontalon Antti
+	ja Rannanjärvi / Ne jutteli kaharen kesken". Todennäköisempää lienee
+	kuitenkin, että leikkipuisto on saanut nimensä viereisestä Ison-Antin
+	tiestä, josta Helsingin kadunnimet (1992) osaa kertoa seuraavaa:
+
+	"Ison-Antin tie — Stor-Andersvägen, 1949. Nimi käytössä jo ennen 1946
+	asussa Antintie — Andersvägen, Marjaniemen huvilayhdyskunnan
+	perustaja-asukkaihin kuuluneen rakennusmestari Antti Hongiston mukaan,
+	jota kutsuttu »Isoksi Antiksi»."
+
+	Nimistökysymyksen jälkeen reitti jatkui länteen. Roihuvuoren rajalla
+	alkoivat kuulua ensimmäiset merkit kävelyn aiheuttamasta rasituksesta,
+	kun joidenkin vaeltajien jalat alkoivat painaa. Jyrkkä käännös etelään
+	ja Tammisalon kanavan yli, Pyörökiventien varressa muuan mies lapioiden
+	levitti lunta pihallaan ja pyysi seuruetta talkoisiin. Mikko kieltäytyi
+	kohteliaasti kertoen miehelle matkaa olevan jäljellä vielä
+	kolmekymmentäviisi kilometriä.
+
+	Likimain viidentoista kilometrin tauko osui Kiiltomadonpuistoon – josta
+	kertovasta kyltistä Toivon oli saatava kuva – \textbf{kello 12.22},
+	jolloin osa seurueesta vaihtoi jalkaansa kuivat sukat ja kevensi
+	varustustaan pilvien välistä pilkottelevan auringon lämmittävän
+	vaikutuksen takia.
+
+	Tauon jälkeen jatkettiin vielä etelään, kunnes saavutettiin reitin
+	eteläisin piste, Kettu Repolaisen puisto, jossa reitti teki
+	u-käännöksen palaten mantereen puolelle Laajasalon siltaa pitkin.
+	Seuraava tauko tulikin tavanomaista nopeammin reilu kolme kilometriä
+	myöhemmin, kun seurue pysähtyi istumaan Laivalahdenkaaren ja
+	Kerttulinkujan kulmassa kasvavan hevoskastanjan alle noin \textbf{kello
+	13.15}. Tauko kulki nimellä "Piolimatkankrouvi", vaikka todellisuudessa
+	ei sitä ihan vielä ollutkaan. Tulipa seuruetta ihmettelmään muuan
+	rouva, joka uteliaisuuttaan tuli kysymään, mistä lippukunnasta
+	vaeltajat olivat.
+
+	Nopea taktinen tauko Hitsaajankadun Picnic-kahvilassa ja pian oltiin
+	matkalla kohti kaupungin keskustaa. Varustusta lisättiin ennen
+	Naurissaaren siltaa kolean länsituulen viilentäen vaeltajia. Läpi
+	Kulosaaren, seuraava tauko ja seuraava rouva osuivat Mustikkamaalle
+	\textbf{kello 14.28}. Kruunusiltojen työmaata ihmeteltiin ylitettäessä
+	Isoisänsiltaa, josta reitti yhtyikin vuoden 2022 Hiipivä Haamu
+	-salapoliisikilpailun ennakkotehtävien kaupunkikierrokseen.
+
+	\vspace*{0.16cm}
+	\noindent\includegraphics[width=\linewidth]{assets/nahkaliljamikko}
+
+	\vspace*{0.16cm}
+	\noindent\includegraphics[width=\linewidth]{assets/nahkaliljamustikkamaa}
+
+	\noindent\includegraphics[width=\linewidth]{assets/nahkaliljakalasatama}
+
+	Hakaniemen läpi päästiin juuri ja juuri jo mainitun liikennehankkeen
+	työmaiden välistä pujotellen. Seureen etenemisvauhtia kuvasi hyvin
+	Mikon kommentti, kuinka kukaan ei ollut vielä onnistunut vaeltajia
+	ohittamaan. Kaisantunneli ei ollut ehtinyt vielä valmistua, mutta
+	onneksi Linnunlaulun silta sai seurueen junaratojen länsipuolelle.
+	Hakasalmen puistossa Töölönlahden rannalla Janne ja Tanguy nauttivat
+	mämmiä \textbf{kello 15.44}. Kuivat sukat jalkaan ja vaellus jatkui.
+	Jalkojen lisäksi myös nälkä alkoi painaa osaa vaeltajista. Linnuntietä
+	maaliin oli yli kymmenen ja puoli kilometriä, mikä tarkoitti sitä, että
+	vaadittu neljäkymmentä kilometriä tultaisiin todennäköisesti
+	ylittämään.
+
+	Töölönlahden kierron jälkeen suunta otettiin kohti maalia. Arvottiin,
+	jahka oikaistaisiin takaisin Itäväylän vartta, mutta reittimestari
+	pysyi vankasti reittisuunnitelmassaan. Sturenkatu ei tarjonnut
+	erityisen kiinnostavaa maisemaa kävelylle, mutta Vallilan paahtimo
+	herätti muistoja. Mäkelänkadun Subway tarjosi taktisen pysähdyksen,
+	josta vauhtia sen enempää hidastamatta jatkettiin Arabianrantaan.
+
+	Toukolan rantapuiston Laituri-ympäristötaideteos – tarkemmin,
+	kuvataiteilija Merja Salosen laituri, jossa "näkyvät lapsuusmuistona
+	mummolan järven hiekkapohjan aaltokuviot" – tarjosi seurueelle
+	hengähdystauon ja istumapaikan \textbf{kello 17.01}. Tauon aikana muuan
+	Toimen Tytöt -partiolippukunnan jäsen tuli ihmettelemään rusakoiden
+	oransseja huiveja ja kertomaan, kuinka heidän partio-ohjelmansa
+	riihityksessä oltiin hiihdetty kymmeniä kilometrejä vaikeakulkuisen
+	puistikon läpi. (Toim. huom. TT muutti Töölöstä Arabianrantaan vuonna
+	2008.) Tauko päättyi \textbf{kello 17.22}.
+
+	Arvioitaessa Vanhankaupunginkosken ylitystä päädyttiin lyhimpään ja
+	nopeimpaan ratkaisuun ylitettävien siltojen lukumäärän kustannuksella.
+	Tässä vaiheessa vaeltajien välimatkat jo kasvoivat merkittävästi
+	toisten jalkojen painaessa enemmän kuin toisten.
+
+	Viikinportinkadun risteyksessä arvioitiin uudelleen nopeinta
+	mahdollista reittiä maaliin, mutta jälleen reittimestari pysyi vankasti
+	etukäteen valmistellussa reitissä. Tähän mennessä alkuperäinen
+	taukostrategia oli riekaleina niin taukojen välimatkojen kuin niiden
+	kestonkin suhteen; seuraava tauko pidettiin Viikintien varressa
+	luonnonsuojelualueen kulmassa \textbf{kello 18.02}, jossa levättiin jo
+	kevyenliikenteenväylällä maaten.
+
+	Seurasi reitin tylsin osuus, Viikin suora, jolla itse kukin tunsi tai
+	ei tuntenut jaloissaan aivan uusia tuntemuksia. Viikintieltä käänyttiin
+	kohti Hallainvuorta ja Ilmolanraitilla pidettiin tauko \textbf{kello
+	18.35}. Osallistujien mittarit näyttivät tässä vaiheessa neljänkymmenen
+	kilometrin jo täyttyneen. Lippukunnan kolo oli jo kivenheiton päässä.
+	Liukastelua vanhalla latupohjalla ja pian oltiin jo tutussa ja
+	turvallisessa Kivikossa, kun seurue ylitti Kehä I:n Viikinpuistonsiltaa
+	pitkin.
+
+	Kivikon puolella pohdittiin, sikäli mikäli maaliin olisi välttämätöntä
+	kaikkien kävellä, koska määritelty matka oli mitä todennäköisimmin jo
+	saatu täyteen. Niinpä Elias erkani seurueesta kotimatkalle
+	Kivikonlaidan varrella \textbf{kello 18.59}, Tanguy ja Toivo jäivät
+	Kivijatatien bussipysäkille \textbf{kello 19.06} ja Leon autokyyti otti
+	hänet mukaansa Panosaukion tuntumasta \textbf{kello 19.09}.
+
+	Jäljelle jääneet vaeltajat Ahti, Janne ja Mikko kävelivät maaliin asti,
+	jossa he olivat reittimestarin kellon mukaan \textbf{kello 19.32}. Koko
+	matkan pituudeksi tuli tarkistusmittauksen jälkeen reilu
+	neljäkymmentäkolme kilometriä, mikä tarkoitti noin 4,2 kilometrin
+	tuntivauhtia – todella haipakkaa siis. Punaisen nahkaliljan
+	viisikymmentä kilometriä ei siis ole haaste eikä mikään!
+
+	Ilmatieteen laitoksen Kumpulan havaintoasemalla merkittiin
+	vaelluspäivän sääksi puolipilvisestä pilviseen, lämpötila 2–5 astetta,
+	länsituulta 3–7 metriä sekunnissa ja ilmankosteus 77–93 prosenttia –
+	mitä erinomaisin nahkaliljakeli, sanoisin!\\
+
+	\vspace*{0.50cm}
+
+	\raggedleft Toimittaja: Janne Suomalainen\\
+	\vspace*{0.10cm}
+	\raggedleft Kuvat: Tanguy Gérôme
+
+\end{multicols}
+
+\begin{center}
+\includegraphics[width=0.65\linewidth]{assets/nahkaliljaviikki}
+\end{center}
+
+Lopuksi, tässä on jokaisen osallistujan kolmen sanan tiivistelmä.
+Valitettavasti, päätoimittaja sekoitti hänen muistiinpanonsa.
+Teillä on tehtävä: kuka sanoi mitä.
+
+\begin{center}
+	\begin{tabular}{ |c||ccc||c| }
+		\hline
+		Ahti & a. & & 1. & hauska hyvä sää \\
+		\hline
+		Elias & b. & & 2. & jalat irtoavat pois \\
+		\hline
+		Janne & c. & & 3. & kipu kärsimys ruoka \\
+		\hline
+		Leo & d. & & 4. & minä pidän kävely \\
+		\hline
+		Mikko & e. & & 5. & mulla on nälkä \\
+		\hline
+		Tanguy & f. & & 6. & oli hauska aloituksessa \\
+		\hline
+		Toivo & g. & & 7. & optimaalinen reipas keväinen \\
+		\hline
+
+		% Ahti & a. & & 1. & hauska & hyvä & sää \\
+		% \hline
+		% Elias & b. & & 2. & jalat & irtoavat & pois \\
+		% \hline
+		% Janne & c. & & 3. & kipu & kärsimys & ruoka \\
+		% \hline
+		% Leo & d. & & 4. & minä & pidän & kävely \\
+		% \hline
+		% Mikko & e. & & 5. & mulla & on & nälkä \\
+		% \hline
+		% Tanguy & f. & & 6. & oli & hauska & aloituksessa \\
+		% \hline
+		% Toivo & g. & & 7. & optimaalinen & reipas & keväinen \\
+		% \hline
+
+		% Ahti & minä & pidän & kävely \\
+		% \hline
+		% Elias & mulla & on & nälkä \\
+		% \hline
+		% Janne & optimaalinen & reipas & keväinen \\
+		% \hline
+		% Leo & kipu & kärsimys & ruoka \\
+		% \hline
+		% Mikko & hauska & hyvä & sää \\
+		% \hline
+		% Tanguy & oli & hauska & aloituksessa \\
+		% \hline
+		% Toivo & jalat & irtoavat & pois \\
+		% \hline
+
+		% Ahti & minä pidän kävely \\
+		% \hline
+		% Elias & mulla on nälkä \\
+		% \hline
+		% Janne & optimaalinen reipas keväinen \\
+		% \hline
+		% Leo & kipu kärsymys ruoka \\
+		% \hline
+		% Mikko & hauska hyvä sää \\
+		% \hline
+		% Tanguy & oli hauska aloituksessa \\
+		% \hline
+		% Toivo & jalat irtoavat pois \\
+		% \hline
+	\end{tabular}
+\end{center}
+
+
+\clearpage
+\subsection{Kolkkien päiväretki 13.4.}
+
+\vspace*{0.16cm}
+\noindent\includegraphics[width=\linewidth]{assets/kolkkienpäiväretkibw1}
+
+\begin{multicols}{2}
+
+	\vspace*{0.16cm}
+	\noindent\includegraphics[width=\linewidth]{assets/kolkkienpäiväretkibw2}
+
+	\columnbreak
+
+	\vspace*{0.16cm}
+	\noindent\includegraphics[width=\linewidth]{assets/kolkkienpäiväretkibw13}
+
+\end{multicols}
+
+\vspace*{0.16cm}
+\noindent\includegraphics[width=\linewidth]{assets/kolkkienpäiväretkibw3}
+
+\medskip
+\noindent\null\hfill Kuvat: Tanguy Gérôme
 
 \clearpage
 
-\thispagestyle{empty}\ThisCenterWallPaper{1.06}{takakansikuva.jpg}~
+Valokuvaus rasti:
+
+\begin{multicols}{2}
+
+	\centering
+	\noindent\includegraphics[width=0.9\linewidth]{assets/kolkkienpäiväretki4}
+	\noindent\includegraphics[width=0.9\linewidth]{assets/kolkkienpäiväretki5}
+	\noindent\includegraphics[width=0.9\linewidth]{assets/kolkkienpäiväretki6}
+	\noindent\includegraphics[width=0.9\linewidth]{assets/kolkkienpäiväretki7}
+	\noindent\includegraphics[width=0.9\linewidth]{assets/kolkkienpäiväretki9}
+	\noindent\includegraphics[width=0.9\linewidth]{assets/kolkkienpäiväretki10}
+	\noindent\includegraphics[width=0.9\linewidth]{assets/kolkkienpäiväretki11}
+	\noindent\includegraphics[width=0.9\linewidth]{assets/kolkkienpäiväretki12}
+
+	% \columnbreak
+
+\end{multicols}
+
+\subsection{Olion paluu -telttaretki 19.-21.4.}
+
+\clearpage\section{Tulossa pian}
+\subsection{Partioparaati 28.4.}
+\subsection{Veneen oma retki 3.–5.5.}
+\subsection{Pyörävaellus 9.–12.5.}
+\subsection{Kevätretki \& kevätjuhla 24.-26.5.}
+\subsection{Uikun uinti -vaellus, 26.–30.6.}
+\subsection{Kimara 26.7.-3.8.}
+
+
+
+\clearpage
+
+\thispagestyle{empty}\ThisCenterWallPaper{1.07}{assets/takakansikuva2.jpg}~
 
 \vfill
 
-{\noindent\centering\color{kuru}\Large\bfseries Kurkisuon Rusakot ry\par}
+
+{
+	\noindent
+	\centering
+	\psset{cornersize=absolute,linearc=.5\baselineskip}
+	\begin{center}
+		\psframebox[framesep=2mm,fillcolor=kuru,fillstyle=solid]{
+			\color{white}\Large\bfseries Kurkisuon Rusakot ry\par
+		}
+	\end{center}
+}
 \end{document}
